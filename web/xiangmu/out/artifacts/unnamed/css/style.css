@@ -1,0 +1,321 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* 头部样式 */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 主内容区域 */
+.content {
+    padding: 40px;
+}
+
+/* 表单容器 */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    color: #667eea;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* 表单组 */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group label .required {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* 单选框和复选框 */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* 错误提示 */
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group.error input,
+.form-group.error select {
+    border-color: #e74c3c;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+/* 成功提示 */
+.form-group.success input,
+.form-group.success select {
+    border-color: #27ae60;
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 底部样式 */
+footer {
+    background: #f8f9fa;
+    padding: 20px 40px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* 信息展示卡片 */
+.info-card {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.info-card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.info-card strong {
+    color: #333;
+    display: inline-block;
+    min-width: 100px;
+}
+
+/* 成功消息 */
+.success-message {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* 演示区域 */
+.demo-section {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.demo-section h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.demo-section .code-block {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+/* 首页卡片网格 */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        border-radius: 0;
+    }
+    
+    header, .content, footer {
+        padding: 20px;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
